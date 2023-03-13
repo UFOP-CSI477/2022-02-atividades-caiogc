@@ -1,72 +1,35 @@
-# **CSI606-2022-02 - Proposta de Trabalho Final**
+# **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-  
-
-## *Aluno: Caio Guilherme Costa Carvalho
-
-  
+## *Aluna(o): Princesa Leia (Luke Skywalker)*
 
 --------------
 
-  
-
 <!-- Descrever um resumo sobre o trabalho. -->
-
-  
 
 ### Resumo
 
-  
-
-Esse trabalho tem como finalidade o desenvolvimento de um site para gestão e divulgação de eventos na cidade de João Monlevade. Uma página inicial com os eventos separados por categoria ou data e a página de cada evento com suas respectivas informações como tipo de evento, valor, data, local, etc.  
+  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
 
 <!-- Apresentar o tema. -->
-
 ### 1. Tema
 
-  
-
-O trabalho final tem como tema o desenvolvimento de um site para gestão e divulgação de eventos em João Monlevade.
-
-  
+  O trabalho final tem como tema o desenvolvimento de ...
 
 <!-- Descrever e limitar o escopo da aplicação. -->
-
 ### 2. Escopo
 
-  
-
-Este projeto terá as seguintes funcionalidades:
-	
-
- - página inicial com próximos eventos;
- - página do evento com informações sobre tipo do evento, valor, data, local, etc.;
- - o usuário poderá criar, editar e excluir um evento e suas informações;
- - o usuário poderá buscar/filtrar eventos por nome, tipo, valor ou data;
- - o usuário será capaz de compartilhar eventos em redes sociais; 
+  Este projeto terá as seguintes funcionalidades...
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
-
 ### 3. Restrições
 
-  
-
-Neste trabalho não serão considerados sistemas de pagamento e  autenticações de usuário, devido à complexidade e curto prazo. O usuário acessará com permissão total.
-
-  
+  Neste trabalho não serão considerados ...
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
-
 ### 4. Protótipo
 
-  
-
-Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
-
-  
+  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
 
 ### 5. Referências
 
-  
-
-Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+  Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.

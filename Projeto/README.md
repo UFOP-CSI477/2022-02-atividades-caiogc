@@ -61,7 +61,7 @@ Neste trabalho não serão considerados sistemas de pagamento e  autenticações
 
   
 
-Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+Protótipos para as páginas 'Home' e 'Evento' foram elaborados, e podem ser encontrados em https://www.figma.com/file/58G1YkKgZ1O17WML1wgG7g/Divulga%C3%A7%C3%A3o-de-Eventos---Sistema-Web?node-id=0%3A1&t=5QJk9AlH9QXr6nNO-1
 
   
 
