@@ -69,4 +69,4 @@ Protótipos para as páginas 'Home' e 'Evento' foram elaborados, e podem ser enc
 
   
 
-Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+Referências podem ser incluídessário. Utilize o padrão ABNT.as, caso nec

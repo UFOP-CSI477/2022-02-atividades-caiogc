@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+
+model Categoria {
+  id Int @id @default(autoincrement())
+  nome String
+  eventos Evento[]
+
+  @@map("categorias")
+}
+
+model Evento {
+  id         Int      @id @default(autoincrement())
+  nome       String @unique
+  descricao  String
+  preco      Decimal
+  data       DateTime
+  local      String
+  
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  categoria_id Int
+
+  categoria Categoria @relation(fields: [categoria_id], references: [id])
+
+  @@map("eventos")
+}
