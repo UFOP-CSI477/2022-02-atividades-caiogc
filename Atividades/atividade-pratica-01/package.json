@@ -1,0 +1,23 @@
+{
+  "name": "server-api-doacao-sangue",
+  "version": "1.0.0",
+  "description": "Servidor da Aplicação de Doação de Sangue",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caio Carvalho",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.11.0"
+  }
+}
