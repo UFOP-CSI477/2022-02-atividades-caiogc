@@ -6,13 +6,13 @@ export class GetByIdTipoController {
 
         const { id } = request.params;
 
-        const tiposanguineo = await prisma.tiposanguineo.findUnique({
+        const tipoSanguineo = await prisma.tipoSanguineo.findUnique({
             where: {
                 id: parseInt(id)
             }
         });
 
-        return response.json(tiposanguineo);
+        return response.json(tipoSanguineo);
 
     }
 

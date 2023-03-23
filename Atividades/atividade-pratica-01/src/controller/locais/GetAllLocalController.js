@@ -7,7 +7,7 @@ export class GetAllLocalController {
         const locais = await prisma.local.findMany({
 
             include: {
-                estado: true
+                cidade: true
             }
 
         });

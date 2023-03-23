@@ -10,13 +10,13 @@ export class DeleteTipoController {
         try {
             console.log(request.body);
 
-            const tiposanguineo = await prisma.tiposanguineo.delete({
+            const tipoSanguineo = await prisma.tipoSanguineo.delete({
                 where: {
                     id: parseInt(id)
                 }
             });
 
-            response.json(tiposanguineo);
+            response.json(tipoSanguineo);
         }catch(error) {
 
             if ( error.code === "P2025" &&

@@ -5,7 +5,7 @@ export class UpdateTipoController{
     async handle(request, response){
         const {id, tipo, fator} = request.body;
         
-        const tiposanguineo = await prisma.tiposanguineo.update({
+        const tipoSanguineo = await prisma.tipoSanguineo.update({
             where:{
                 id: id
             },
@@ -16,7 +16,7 @@ export class UpdateTipoController{
             }
         });
 
-        response.json(tiposanguineo);
+        response.json(tipoSanguineo);
     }
 
 }

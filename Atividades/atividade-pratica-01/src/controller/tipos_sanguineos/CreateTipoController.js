@@ -14,7 +14,7 @@ export class CreateTipoController {
         }
         // sanitizacao
 
-        const tiposanguineo = await prisma.tiposanguineo.create({
+        const tipoSanguineo = await prisma.tipoSanguineo.create({
 
             data: {
                 tipo,
@@ -23,8 +23,8 @@ export class CreateTipoController {
 
         });
 
-        console.log(tiposanguineo);
-        return response.json(tiposanguineo);
+        console.log(tipoSanguineo);
+        return response.json(tipoSanguineo);
 
     }
 
