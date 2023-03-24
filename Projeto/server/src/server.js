@@ -6,18 +6,18 @@ import { eventoRouter } from './routes/eventos.js';
 
 const PORT = 7777;
 
-const app = express();
-app.use(express.json());
-app.use(cors())
+const server = express();
+server.use(express.json());
+server.use(cors())
 
 // Routes:
-app.use(mainRouter);
-app.use(categoriaRouter);
-app.use(eventoRouter)
+server.use(mainRouter);
+server.use(categoriaRouter);
+server.use(eventoRouter)
 
 
 // Server - start/listen
-app.listen(PORT, () => {
+server.listen(PORT, () => {
 
     console.log(`[SERVER] Server is running on port ${PORT}`);
 

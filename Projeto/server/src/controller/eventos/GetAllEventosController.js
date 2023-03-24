@@ -11,7 +11,9 @@ export class GetAllEventosController {
                 nome: true,
                 descricao: true,
                 preco: true,
+                data: true,
                 local: true,
+                img: true,
                 categoria: {
                     select: {
                         nome: true

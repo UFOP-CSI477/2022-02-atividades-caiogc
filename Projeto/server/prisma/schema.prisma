@@ -23,6 +23,7 @@ model Evento {
   preco      Decimal
   data       DateTime
   local      String
+  img        String
   
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
