@@ -9,6 +9,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import Button from "@mui/material/Button";
+import TopBar from "./TopBar";
 
 
 const CreateEvento = () => {
@@ -66,9 +67,9 @@ const CreateEvento = () => {
         <div>
 
 
-
-            <Box display="flex">
-                <Box mb={5}>
+            <TopBar />
+            <Box display="flex" justifyContent='center' mt={5} p={5} sx={{ background:'white', borderRadius: 5}}>
+                <Box mb={5} px={2} py={3}>
                     <Typography variant="h4" fontWeight={700} mb={2}>
                         Criação de Evento
                     </Typography>
@@ -78,7 +79,7 @@ const CreateEvento = () => {
                         <Grid item display="flex" alignSelf="flex-start" md={6}>
                             <Typography variant="h6">Nome do Evento:</Typography>
                         </Grid>
-                        <Grid item md={12} mb={2}>
+                        <Grid item md={12} mb={4}>
                             <FormControl color="primary" focused fullWidth>
                                 <TextField
                                     size="small"
@@ -96,9 +97,9 @@ const CreateEvento = () => {
 
                     <Grid container display="flex" alignItems="start">
                         <Grid item xs={12} md={4} display="flex" alignSelf="flex-start">
-                            <Typography fontWeight="600">Categoria:</Typography>
+                            <Typography fontWeight="600" variant="h6">Categoria:</Typography>
                         </Grid>
-                        <Grid item xs={12} md={8} mb={2} display="flex" alignSelf="flex-start">                            
+                        <Grid item xs={12} md={8} mb={4} display="flex" alignSelf="flex-start">                            
                             <select 
                                 name="categoria" 
                                 id="categoria"
@@ -130,7 +131,7 @@ const CreateEvento = () => {
                         <Grid item display="flex" alignSelf="flex-start" md={6}>
                             <Typography variant="h6">Sobre o Evento:</Typography>
                         </Grid>
-                        <Grid item md={12} mb={2}>
+                        <Grid item md={12} mb={4}>
                             <FormControl color="primary" focused fullWidth>                                               
                                 <TextField
                                 id="descricao"
@@ -151,7 +152,7 @@ const CreateEvento = () => {
                                 <Input
                                     id="preco"
                                     startAdornment={<InputAdornment position="start">$</InputAdornment>}
-                                    onChange={e => setDescricao(e.target.value)}
+                                    onChange={e => setPreco(e.target.value)}
                                 />
                             </FormControl>
                         </Grid>                    
@@ -160,13 +161,14 @@ const CreateEvento = () => {
                     <Grid container display="flex" alignItems="start">
                         <Grid item md={12} my={2}>
                             <InputLabel htmlFor="dataEvento">Data</InputLabel>
-                            <Input type="date"
+                            <Input type="datetime-local"
                                 name="dataEvento"
                                 id="dataEvento"
                                 value={dataEvento}
                                 fullWidth
                                 onChange={e => setDataEvento(e.target.value)}
                                 />
+                                
                         </Grid>                    
                     </Grid>
 
@@ -174,7 +176,7 @@ const CreateEvento = () => {
                         <Grid item display="flex" alignSelf="flex-start" md={6}>
                             <Typography variant="h6">Local:</Typography>
                         </Grid>
-                        <Grid item md={12} mb={2}>
+                        <Grid item md={12} mb={4}>
                             <FormControl color="primary" focused fullWidth variant="standard">
                                 <TextField
                                     size="small"
@@ -192,12 +194,13 @@ const CreateEvento = () => {
                             <Grid item display="flex" alignSelf="flex-start" md={6}>
                                 <Typography variant="h6">Banner do Evento:</Typography>
                             </Grid>
-                            <Grid item md={12} mb={2}>
+                            <Grid item md={12} mb={4}>
                                 <FormControl fullWidth variant="standard">
                                     <InputLabel htmlFor="img">Insira um link</InputLabel>
                                     <Input
                                         id="img"
                                         onChange={e => setImg(e.target.value)}
+                                        size='small'
                                     />
                                 </FormControl>
                             </Grid>

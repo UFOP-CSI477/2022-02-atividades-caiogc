@@ -1,5 +1,5 @@
+import { Card, CardActionArea, CardContent, CardMedia, Typography, Grid } from "@mui/material";
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
 import api from "../services/api"
 import { CategoriaInterface } from "./ListCategorias";
 
@@ -8,7 +8,7 @@ export interface EventoInterface {
     nome: string;
     descricao: string;
     preco: number;
-    dataEvento: Date;
+    dataEvento: string;
     local: string;
     img: string;
     created_at: string;
@@ -56,63 +56,39 @@ const ListEventos = () => {
         }
 
     }
+    
 
-
+    
     return(
-
+        
         <div>
-
-            <h2>Eventos</h2>
-
-            <div>
-                <Link to="/">Voltar</Link>
-            </div>
-            <div>
-                <Link to="/eventos/create">Cadastrar Evento</Link>
-            </div>
-
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Categoria</th>
-                        <th>Descição</th>
-                        <th>Data</th>
-                        <th>Preço</th>
-                        <th>Local</th>
-                        <th>Img</th>                    
-                        <th>Atualizar</th>
-                        <th>Excluir</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    {eventos.map(evento => (
-                        <tr key={evento.id}>
-                            <td>{evento.id}</td>
-                            <td>{evento.nome}</td>
-                            <td>{evento.categoria.nome}</td>
-                            <td>{evento.descricao}</td>
-                            <td>{evento.dataEvento}</td>
-                            <td>{evento.preco}</td>
-                            <td>{evento.local}</td>
-                            <td>{evento.img}</td>
-                            <td>{evento.created_at}</td>
-                            <td>{evento.updated_at}</td>
-                            <td><Link 
-                                to={`/eventos/update/${evento.id}`}>Atualizar</Link></td>
-                            <td><button onClick={()=>{ 
-                                handleDeleteEvento(evento.id)
-                             }}>Excluir</button> </td>
-                        </tr>
+            <Grid container spacing={3} p={2} maxWidth="xl">                           
+                {eventos.map(evento => (
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Card sx={{ maxWidth: 345 }}>
+                            <CardActionArea href={`/eventos/${evento.id}`}>
+                                <CardMedia
+                                component="img"
+                                height="300"
+                                image={evento.img}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        {evento.nome}
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        {evento.local}
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        {evento.dataEvento}
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
                     ))
-                    }
-                </tbody>
-
-            </table>
-
+                }
+            </Grid>
         </div>
 
     )

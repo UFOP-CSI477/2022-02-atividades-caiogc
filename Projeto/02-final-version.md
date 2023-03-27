@@ -8,22 +8,35 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+Esse trabalho tem como finalidade o desenvolvimento de um site para gestão e divulgação de eventos na cidade de João Monlevade. Uma página inicial com os eventos separados por categoria ou data e a página de cada evento com suas respectivas informações como tipo de evento, valor, data, local, etc. 
 
-### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
+### 1. Funcionalidades implementadas	
+
+ - página inicial com os eventos;
+ - página do evento com informações sobre tipo do evento, valor, data, local, etc.;
+ - compartilhar eventos nas redes sociais; 
   
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+  - criar, editar e excluir um evento por não conseguir tratar problemas de tipagem das variáveis;
+  - buscar/filtrar eventos por nome, tipo, ou data por não conseguir implementar a função filter no contexto da aplicação;
 
 ### 3. Outras funcionalidades implementadas
 <!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+A principal dificuldade foi em ralação a manipulação dos dados da API na interface, principalmete o atributo do tipo date. Algumas funções não foram implementadas por esse motivo.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+ 1. Clone o repositório
+ 
+ 2. Acessar os diretórios "Projeto/server" e "Projeto/web-eventos" via terminal e executar
+ `npm run install`
+ 
+ 3.  Criar o arquivo do banco de dados "app.sqlite" e informar o caminho no ".env" do server para acessar via Prisma
+ 
+ 4. Iniciar o servidor `npm start`
+
+ 5. Iniciar aplicação `npm run dev`
 
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
