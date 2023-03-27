@@ -8,65 +8,39 @@
 
 --------------
 
-  
 
-<!-- Descrever um resumo sobre o trabalho. -->
-
-  
 
 ### Resumo
 
-  
+Esse trabalho tem como finalidade o desenvolvimento de um site para gestão e divulgação de eventos na cidade de João Monlevade. Uma página inicial com os eventos separados por categoria ou data e a página de cada evento com suas respectivas informações como tipo de evento, valor, data, local, etc. 
 
-Esse trabalho tem como finalidade o desenvolvimento de um site para gestão e divulgação de eventos na cidade de João Monlevade. Uma página inicial com os eventos separados por categoria ou data e a página de cada evento com suas respectivas informações como tipo de evento, valor, data, local, etc.  
+### 1. Funcionalidades implementadas	
 
-<!-- Apresentar o tema. -->
-
-### 1. Tema
-
-  
-
-O trabalho final tem como tema o desenvolvimento de um site para gestão e divulgação de eventos em João Monlevade.
-
-  
-
-<!-- Descrever e limitar o escopo da aplicação. -->
-
-### 2. Escopo
-
-  
-
-Este projeto terá as seguintes funcionalidades:
-	
-
- - página inicial com próximos eventos;
+ - página inicial com os eventos;
  - página do evento com informações sobre tipo do evento, valor, data, local, etc.;
- - o usuário poderá criar, editar e excluir um evento e suas informações;
- - o usuário poderá buscar/filtrar eventos por nome, tipo, valor ou data;
- - o usuário será capaz de compartilhar eventos em redes sociais; 
-
-<!-- Apresentar restrições de funcionalidades e de escopo. -->
-
-### 3. Restrições
-
+ - compartilhar eventos nas redes sociais; 
   
+### 2. Funcionalidades previstas e não implementadas
+  - criar, editar e excluir um evento por não conseguir tratar problemas de tipagem das variáveis;
+  - buscar/filtrar eventos por nome, tipo, ou data por não conseguir implementar a função filter no contexto da aplicação;
 
-Neste trabalho não serão considerados sistemas de pagamento e  autenticações de usuário, devido à complexidade e curto prazo. O usuário acessará com permissão total.
+### 3. Outras funcionalidades implementadas
+<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
 
-  
+### 4. Principais desafios e dificuldades
+A principal dificuldade foi em ralação a manipulação dos dados da API na interface, principalmete o atributo do tipo date. Algumas funções não foram implementadas por esse motivo.
 
-<!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
+### 5. Instruções para instalação e execução
+ 1. Clone o repositório
+ 
+ 2. Acessar os diretórios "Projeto/server" e "Projeto/web-eventos" via terminal e executar
+ `npm run install`
+ 
+ 3.  Criar o arquivo do banco de dados "app.sqlite" e informar o caminho no ".env" do server para acessar via Prisma
+ 
+ 4. Iniciar o servidor `npm start`
 
-### 4. Protótipo
+ 5. Iniciar aplicação `npm run dev`
 
-  
-
-Protótipos para as páginas 'Home' e 'Evento' foram elaborados, e podem ser encontrados em https://www.figma.com/file/58G1YkKgZ1O17WML1wgG7g/Divulga%C3%A7%C3%A3o-de-Eventos---Sistema-Web?node-id=0%3A1&t=5QJk9AlH9QXr6nNO-1
-
-  
-
-### 5. Referências
-
-  
-
-Referências podem ser incluídessário. Utilize o padrão ABNT.as, caso nec
+### 6. Referências
+<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
